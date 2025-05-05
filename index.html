@@ -38,14 +38,97 @@
 
 
 
-  <section>
+<section class="project-section">
   <h2>🛠️ 项目经历</h2>
-  <ul>
-    <li>
-      <strong>金融危机预测：基于计量经济与机器学习的综合分析</strong><br>
-      合作论文被录用于 <a href="https://www.icmis.org/" target="_blank">ICMIS 2024 国际会议</a>，于 2024 年 9 月在东京进行口头报告并发表在 Springer 出版社的《Business and Economics》系列中。<br>
-      合作者：Ziqian Peng, Mengxi Liu, Jianjie Li, Rongxin Zhang
-    </li>
+
+  <div class="project">
+    <h3>📌 金融危机预测：基于计量经济与机器学习的综合分析</h3>
+    <p class="date">时间：2024.05 – 2024.08</p>
+    <p>构建一个可解释性强的金融危机预测模型，结合市场数据和危机标签，探索经济学与机器学习的融合路径。采用决策树和支持向量机进行模型训练和效果评估。<br>
+    结果：论文被 <a href="https://www.icmis.org/" target="_blank">ICMIS 2024 国际会议</a> 录用，将于 2024 年 9 月在东京口头报告，并登载于 Springer 《Business and Economics》 系列。<br>
+    合作者：Ziqian Peng, Mengxi Liu, Jianjie Li, Rongxin Zhang
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>📌 金融危机关键指标识别：基于分类树的实证研究</h3>
+    <p class="date">时间：2025.01 – 2025.04</p>
+    <p>利用分类树模型对 1870–2008 年间 14 个发达国家的实际宏观经济数据进行分析，探索金融危机的关键规律指标。基于 Schularick 和 Taylor (2012) 历史数据，包括银行信贷、货币供给、GDP 等多种宏观量化指标。<br>
+    通过数据处理，算法构建，并利用 R 语言 rpart 包实现分类树建模。ROC 曲线和 AUC 指标显示模型较高的精度（训练准确率达 95.81%，测试准确率 95.96%）。<br>
+    结果指出：信贷/GDP (“credgdp”)、贷款/GDP (“loansgdp”)和实际 GDP (“lrgdp”) 是预测危机的关键因素，对经济风险风控具有指导意义。
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>📌 基于极大似然估计的放射性衰变建模与模型比较分析</h3>
+    <p class="date">时间：2025.02 – 2025.04</p>
+    <p>基于 Henri 和 Marie 两种模型，构建放射性元素衰变过程的数学模型，并进行极大似然估计 (MLE)、95%信息区间、残差分析和 AIC 信息准则比较。<br>
+    结果表明：Henri 模型具有更好的统计稳定性与调和能力（Henri AIC = -134.23，Marie AIC = 748.53）。<br>
+    频率分析表明存在可能的过拟合或变量关联性，支持探索更复杂的 Multi-Rate 模型。
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>📌 分类树建模与剪枝分析</h3>
+    <p class="date">时间：2024.09 – 2024.12</p>
+    <p>培训根据 Titanic 数据进行分类树建模和剪枝分析，并结合 rpart 库进行模型扩展。系统构建了分类树基本原理（Gini/熵）、剪枝算法和 One Standard Error Rule 方案，并结合绘图和表格进行解释分析。<br>
+    报告总结超过 30 页，适合简单分析与入门教学使用。
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>📌 高斯数的代数结构与现代应用研究</h3>
+    <p class="date">时间：2023.02 – 2023.05</p>
+    <p>系统构成了高斯数的基本计算法、因子分解性、正则性以及在密码学和编码理论中的实际应用。<br>
+    分析了 Gaussian Mannheim 距离在二载系统和错误编码设计中的作用，完成了一份图文组合、内容结构稳定的学术报告。
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>📌 图形描述与坐标几何研究</h3>
+    <p class="date">时间：2022.09 – 2022.11</p>
+    <p>重点探讨了坐标系统从历史到现代的演化，举例解析了参数方程表示的不同图形。<br>
+    包括圆、榴圆、双曲、蚊蜓线和心形等。分析图形压缩和动态缩图算法实际意义。
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>📌 中英数学教育比较研究</h3>
+    <p class="date">时间：2022.09 – 2022.10</p>
+    <p>分析中英两国在数学教学理念、历史发展、教材内容、教师信念和评价系统上的区别。<br>
+    包括中国应试体系、英国 Key Stage 教学模型、评价目标差异、教材编辑自由度等方面。最终成果是一份结构经纪、文献充足的研究报告。
+    </p>
+  </div>
+</section>
+
+<style>
+  .project-section {
+    padding: 20px 10px;
+  }
+  .project {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+  }
+  .project h3 {
+    margin: 0 0 6px;
+    font-size: 17px;
+    color: #2c3e50;
+  }
+  .project .date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  .project p {
+    line-height: 1.6;
+    font-size: 15px;
+  }
+</style>
+
+    
   </ul>
 </section>
 
@@ -71,6 +154,17 @@
 <footer style="text-align: center; margin-top: 40px; font-size: 14px; color: #888;">
   © 2025 李健杰 · 个人简历网站
 </footer>
+<div id="google_translate_element" style="position: fixed; top: 10px; right: 10px; z-index: 999;"></div>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'zh-CN',
+      includedLanguages: 'zh-CN,en',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 </html>
