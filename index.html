@@ -1,170 +1,124 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jay的个人简历</title>
+  <title>Jay's Personal Resume</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
-    <h1>你好，我是李健杰（JAY）！</h1>
-    <p>一名布里斯托大学在读学生</p>
+    <h1>Hello, I'm Jianjie Li (JAY)!</h1>
+    <p>A current undergraduate student at the University of Bristol</p>
   </header>
 
   <section>
-    <h2>📚 教育背景</h2>
+    <h2>📚 Education Background</h2>
     <ul>
-      <li>高中：新加坡就读O-level</li>
-      <li>本科：2022 - 2025：<a href="https://www.bristol.ac.uk/" target="_blank">布里斯托大学</a>，数学与统计</li>
-      <li>研究生：2025-2027: <a href="https://www.bu.edu/homepage-alt/" target="_blank">波士顿大学</a>，商业分析</li>
+      <li>High School: Studied O-level curriculum in Singapore</li>
+      <li>Bachelor's: 2022–2025: <a href="https://www.bristol.ac.uk/" target="_blank">University of Bristol</a>, Mathematics and Statistics</li>
+      <li>Master's: 2025–2027: <a href="https://www.bu.edu/homepage-alt/" target="_blank">Boston University</a>, Business Analytics</li>
     </ul>
   </section>
 
   <section>
-  <h2>💼 实习经历</h2>
-  <ul>
-    <li>
-      <strong><a href="https://www.ebtrust.com/" target="_blank">光大兴陇信托有限责任公司</a>（2023.01 – 2023.06）</strong><br>
-      兼职实习生，协助完成公司财务状况的数据收集与分析，参与尽职调查报告撰写，识别潜在问题并提出整改建议。参与行业研究和市场分析报告编写，同时支持项目管理工作，包括合同审核、流程监控及文件收集，并参与信托项目的后期管理。
-    </li>
-    <li>
-      <strong><a href="https://www.bailianhua.com/" target="_blank">上海百莲花进出口有限公司</a>（2021.06 – 2021.08）</strong><br>
-      文控与质检部门实习生，负责数据录入与数据库维护，审核与核对各类文件，确保信息准确性；使用数据分析工具对业务进展与市场指标进行可视化，供管理层决策参考。
-    </li>
-  </ul>
-</section>
+    <h2>💼 Internship Experience</h2>
+    <ul>
+      <li>
+        <strong><a href="https://www.ebtrust.com/" target="_blank">Everbright Xinglong Trust Co., Ltd.</a> (Jan 2023 – Jun 2023)</strong><br>
+        Part-time intern: assisted with data collection and financial analysis, participated in due diligence reporting, and provided recommendations. Also contributed to industry and market research, contract review, process monitoring, and post-project management.
+      </li>
+      <li>
+        <strong><a href="https://www.bailianhua.com/" target="_blank">Shanghai Bailianhua Import & Export Co., Ltd.</a> (Jun 2021 – Aug 2021)</strong><br>
+        Intern in Documentation and Quality Control: responsible for data entry and database maintenance, document verification, and accuracy checks; visualized market metrics to support management decisions.
+      </li>
+    </ul>
+  </section>
 
+  <section class="project-section">
+    <h2>🛠️ Project Experience</h2>
 
+    <div class="project">
+      <h3>📌 Financial Crisis Prediction: A Combined Analysis of Econometrics and Machine Learning</h3>
+      <p class="date">May 2024 – Aug 2024</p>
+      <p>Developed an interpretable financial crisis prediction model integrating macroeconomic indicators, international market data, and crisis labels. Applied decision trees and SVMs for model training and evaluation.<br>
+      Result: Paper accepted by <a href="https://www.icmis.org/" target="_blank">ICMIS 2024 Conference</a>, to be presented in Tokyo and published in Springer’s Business and Economics series.<br>
+      Co-authors: Ziqian Peng, Mengxi Liu, Jianjie Li, Rongxin Zhang
+      </p>
+    </div>
 
-<section class="project-section">
-  <h2>🛠️ 项目经历</h2>
+    <div class="project">
+      <h3>📌 Identifying Key Indicators of Financial Crises via Classification Trees</h3>
+      <p class="date">Jan 2025 – Apr 2025</p>
+      <p>Analyzed macroeconomic data from 14 developed countries (1870–2008) using classification trees. Based on Schularick and Taylor (2012), modeled variables included credit, money supply, GDP, etc.<br>
+      Built models in R using the rpart package; ROC and AUC confirmed high accuracy (train: 95.81%, test: 95.96%).<br>
+      Findings: credgdp, loansgdp, and lrgdp were the most predictive indicators.
+      </p>
+    </div>
 
-  <div class="project">
-    <h3>📌 金融危机预测：基于计量经济与机器学习的综合分析</h3>
-    <p class="date">时间：2024.05 – 2024.08</p>
-    <p>构建一个可解释性强的金融危机预测模型，结合市场数据和危机标签，探索经济学与机器学习的融合路径。采用决策树和支持向量机进行模型训练和效果评估。<br>
-    结果：论文被 <a href="https://www.icmis.org/" target="_blank">ICMIS 2024 国际会议</a> 录用，将于 2024 年 9 月在东京口头报告，并登载于 Springer 《Business and Economics》 系列。<br>
-    合作者：Ziqian Peng, Mengxi Liu, Jianjie Li, Rongxin Zhang
-    </p>
-  </div>
+    <div class="project">
+      <h3>📌 Modeling Radioactive Decay using MLE and AIC Model Comparison</h3>
+      <p class="date">Feb 2025 – Apr 2025</p>
+      <p>Constructed mathematical models of radioactive decay using Henri (linear) and Marie (exponential) frameworks. Conducted MLE, 95% CI, residual analysis, and AIC comparison.<br>
+      Result: Henri model showed better fit and stability (Henri AIC = -134.23, Marie AIC = 748.53). Explored overfitting and multicollinearity risk with Multi-Rate extensions.
+      </p>
+    </div>
 
-  <div class="project">
-    <h3>📌 金融危机关键指标识别：基于分类树的实证研究</h3>
-    <p class="date">时间：2025.01 – 2025.04</p>
-    <p>利用分类树模型对 1870–2008 年间 14 个发达国家的实际宏观经济数据进行分析，探索金融危机的关键规律指标。基于 Schularick 和 Taylor (2012) 历史数据，包括银行信贷、货币供给、GDP 等多种宏观量化指标。<br>
-    通过数据处理，算法构建，并利用 R 语言 rpart 包实现分类树建模。ROC 曲线和 AUC 指标显示模型较高的精度（训练准确率达 95.81%，测试准确率 95.96%）。<br>
-    结果指出：信贷/GDP (“credgdp”)、贷款/GDP (“loansgdp”)和实际 GDP (“lrgdp”) 是预测危机的关键因素，对经济风险风控具有指导意义。
-    </p>
-  </div>
+    <div class="project">
+      <h3>📌 Classification Tree Modeling and Pruning</h3>
+      <p class="date">Sep 2024 – Dec 2024</p>
+      <p>Built classification tree models based on Titanic survival prediction. Used Gini/Entropy splitting, pruning techniques, and One Standard Error Rule via R/rpart.<br>
+      Completed 30+ page report with visualizations and in-depth explanations.
+      </p>
+    </div>
 
-  <div class="project">
-    <h3>📌 基于极大似然估计的放射性衰变建模与模型比较分析</h3>
-    <p class="date">时间：2025.02 – 2025.04</p>
-    <p>基于 Henri 和 Marie 两种模型，构建放射性元素衰变过程的数学模型，并进行极大似然估计 (MLE)、95%信息区间、残差分析和 AIC 信息准则比较。<br>
-    结果表明：Henri 模型具有更好的统计稳定性与调和能力（Henri AIC = -134.23，Marie AIC = 748.53）。<br>
-    频率分析表明存在可能的过拟合或变量关联性，支持探索更复杂的 Multi-Rate 模型。
-    </p>
-  </div>
+    <div class="project">
+      <h3>📌 Algebraic Structure and Applications of Gaussian Integers</h3>
+      <p class="date">Feb 2023 – May 2023</p>
+      <p>Studied factorization, regularity, and applications of Gaussian integers in coding theory and cryptography. Explored Gaussian Mannheim distance in system codes and error correction.<br>
+      Produced a technical report combining theoretical proofs and practical examples.
+      </p>
+    </div>
 
-  <div class="project">
-    <h3>📌 分类树建模与剪枝分析</h3>
-    <p class="date">时间：2024.09 – 2024.12</p>
-    <p>培训根据 Titanic 数据进行分类树建模和剪枝分析，并结合 rpart 库进行模型扩展。系统构建了分类树基本原理（Gini/熵）、剪枝算法和 One Standard Error Rule 方案，并结合绘图和表格进行解释分析。<br>
-    报告总结超过 30 页，适合简单分析与入门教学使用。
-    </p>
-  </div>
+    <div class="project">
+      <h3>📌 Graph Representation and Coordinate Geometry</h3>
+      <p class="date">Sep 2022 – Nov 2022</p>
+      <p>Reviewed historical and modern developments in coordinate systems. Analyzed parametric curves (circle, ellipse, heart-shaped, etc.) and compression algorithms for graphical representation.
+      </p>
+    </div>
 
-  <div class="project">
-    <h3>📌 高斯数的代数结构与现代应用研究</h3>
-    <p class="date">时间：2023.02 – 2023.05</p>
-    <p>系统构成了高斯数的基本计算法、因子分解性、正则性以及在密码学和编码理论中的实际应用。<br>
-    分析了 Gaussian Mannheim 距离在二载系统和错误编码设计中的作用，完成了一份图文组合、内容结构稳定的学术报告。
-    </p>
-  </div>
+    <div class="project">
+      <h3>📌 Comparative Study of Mathematics Education: UK vs. China</h3>
+      <p class="date">Sep 2022 – Oct 2022</p>
+      <p>Compared education philosophies, curriculum structure, and assessment standards between China and the UK. Highlighted topics: exam pressure, Key Stage model, textbook freedom, and cultural influences.<br>
+      Contributed to a literature-based research report with comprehensive analysis.
+      </p>
+    </div>
+  </section>
 
-  <div class="project">
-    <h3>📌 图形描述与坐标几何研究</h3>
-    <p class="date">时间：2022.09 – 2022.11</p>
-    <p>重点探讨了坐标系统从历史到现代的演化，举例解析了参数方程表示的不同图形。<br>
-    包括圆、榴圆、双曲、蚊蜓线和心形等。分析图形压缩和动态缩图算法实际意义。
-    </p>
-  </div>
+  <section>
+    <h2>🧠 Skills</h2>
+    <ul>
+      <li><strong>Programming Languages:</strong> Python (data cleaning, ML), R (statistical analysis)</li>
+      <li><strong>Economic Analysis Tools:</strong> Stata, EViews (regression and time series)</li>
+      <li><strong>Modeling & Computation:</strong> Matlab (PDE modeling), Excel (functions & macros)</li>
+      <li><strong>Visualization & Writing:</strong> PowerPoint (presentations), LaTeX / Word (typesetting, reports)</li>
+      <li><strong>Version Control:</strong> Git / GitHub (collaboration and management)</li>
+      <li><strong>Languages:</strong> English (fluent communication and academic writing)</li>
+    </ul>
+  </section>
 
-  <div class="project">
-    <h3>📌 中英数学教育比较研究</h3>
-    <p class="date">时间：2022.09 – 2022.10</p>
-    <p>分析中英两国在数学教学理念、历史发展、教材内容、教师信念和评价系统上的区别。<br>
-    包括中国应试体系、英国 Key Stage 教学模型、评价目标差异、教材编辑自由度等方面。最终成果是一份结构经纪、文献充足的研究报告。
-    </p>
-  </div>
-</section>
-
-<style>
-  .project-section {
-    padding: 20px 10px;
-  }
-  .project {
-    background: #f9f9f9;
-    border-radius: 8px;
-    padding: 16px 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.04);
-  }
-  .project h3 {
-    margin: 0 0 6px;
-    font-size: 17px;
-    color: #2c3e50;
-  }
-  .project .date {
-    font-size: 14px;
-    color: #888;
-    margin-bottom: 10px;
-  }
-  .project p {
-    line-height: 1.6;
-    font-size: 15px;
-  }
-</style>
-
-    
-  </ul>
-</section>
-
- <section>
-  <h2>🧠 技能</h2>
-  <ul>
-    <li><strong>编程语言：</strong>Python（数据清洗、机器学习建模）、R（统计分析）</li>
-    <li><strong>经济分析工具：</strong>Stata、EViews（用于回归分析与时间序列建模）</li>
-    <li><strong>建模与计算：</strong>Matlab（偏微分方程建模）、Excel（函数与宏）</li>
-    <li><strong>可视化与展示：</strong>PowerPoint（汇报设计）、LaTeX / Word（排版与论文写作）</li>
-    <li><strong>版本控制：</strong>Git / GitHub（代码协作与版本管理）</li>
-    <li><strong>语言能力：</strong>英语（具备流利沟通与学术写作能力）</li>
-  </ul>
-</section>
-
-<section>
-    <h2>📫 联系方式</h2>
+  <section>
+    <h2>📫 Contact</h2>
     <p>Email: l2778067955@gmail.com</p>
     <p>WeChat: ljj13599257076</p>
     <p>Phone: +86 15980310908</p>
   </section>
 
-<footer style="text-align: center; margin-top: 40px; font-size: 14px; color: #888;">
-  © 2025 李健杰 · 个人简历网站
-</footer>
-<div id="google_translate_element" style="position: fixed; top: 10px; right: 10px; z-index: 999;"></div>
-<script type="text/javascript">
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({
-      pageLanguage: 'zh-CN',
-      includedLanguages: 'zh-CN,en',
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-    }, 'google_translate_element');
-  }
-</script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <footer style="text-align: center; margin-top: 40px; font-size: 14px; color: #888;">
+    © 2025 Jianjie Li · Personal Resume Website
+  </footer>
 
 </body>
 </html>
